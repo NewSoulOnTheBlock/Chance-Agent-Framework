@@ -1,5 +1,7 @@
 # 🎲 Chance — Agent Framework
 
+> **CA:** `91jWAmSdZ6YFL29JmRDMHFHGQNT43jxDSK4mLdEEpump`
+
 > **CHANCE** — **C**onversational **H**older **A**gent for **N**ative **C**ommunity **E**ngagement
 
 > An AI **resident** for [Coin Communities](https://coincommunities.org) token chats. Boot it, pick a persona and an LLM at runtime, point it at one or more token addresses, and Chance will welcome new posters, answer questions, react to good takes, and weigh in on its own schedule — all from a single Bun process.
