@@ -1,0 +1,23 @@
+{
+  "name": "chance-agent-framework",
+  "version": "0.1.0",
+  "description": "Chance — an AI resident agent for Coin Communities token chats. Boot, pick a persona + LLM, attach to any community, chat live.",
+  "type": "module",
+  "scripts": {
+    "setup": "bun src/index.ts setup",
+    "start": "bun src/index.ts run",
+    "dev": "bun --watch src/index.ts run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@clack/prompts": "^0.8.2",
+    "@coin-communities/sdk": "^1.0.2",
+    "openai": "^4.71.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.3"
+  }
+}

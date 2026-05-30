@@ -1,0 +1,7 @@
+node_modules/
+bun.lockb
+.env
+.env.local
+chance.config.json
+*.log
+.DS_Store
