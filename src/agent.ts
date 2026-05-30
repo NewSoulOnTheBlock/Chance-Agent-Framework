@@ -92,7 +92,7 @@ export async function run(cfg: Config): Promise<void> {
       onDisconnect: () => log('realtime disconnected'),
       onGap: () => log('realtime gap — would refetch in production'),
       onMessage: async (event: CommunityMessageEvent) => {
-        // If this echoes one of our pending optimistic posts, reconcile + record id.
+        log(`← msg from @${event.username} (${event.userId.slice(0, 8)}): "${event.content.slice(0, 120)}"`);
         if (state.reconcile(event.content)) {
           state.ownMessageIds.add(event.id);
           if (event.isSpam || event.isHarmful) {
